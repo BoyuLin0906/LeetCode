@@ -14,7 +14,7 @@ class Solution:
         word_set.remove(endWord)
         level = 0
         
-        # bidirectional dfs
+        # bidirectional BFS
         while len(forward_sequence) > 0 and len(backward_sequence) > 0:
             print(forward_sequence)
             print(backward_sequence)
