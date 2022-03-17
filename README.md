@@ -1,1 +1,3 @@
 # LeetCode
+
+For personal practice
