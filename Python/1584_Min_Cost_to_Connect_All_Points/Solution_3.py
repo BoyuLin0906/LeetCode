@@ -1,5 +1,6 @@
 class uf_ds:
     def __init__(self, parent):
+        # optimization
         self.parent_node = parent
 
     def find(self, k):

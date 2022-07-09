@@ -29,11 +29,3 @@ class SnapshotArray:
             if array[mid][0] <= snap_id: low = mid
             else: high = mid - 1
         return low
-        
-        
-
-# Your SnapshotArray object will be instantiated and called as such:
-# obj = SnapshotArray(length)
-# obj.set(index,val)
-# param_2 = obj.snap()
-# param_3 = obj.get(index,snap_id)

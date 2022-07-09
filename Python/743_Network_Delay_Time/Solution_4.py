@@ -19,5 +19,5 @@ class Solution:
         
         DFS(k, 0)
         max_weight = max(result_list)
-        print(result_list)
+        
         return max_weight if max_weight < inf else -1
