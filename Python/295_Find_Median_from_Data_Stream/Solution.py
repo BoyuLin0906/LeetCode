@@ -12,10 +12,12 @@ class MedianFinder:
 
     def addNum(self, num: int) -> None:
         heapq.heappush(self.min_heap, -num)
+        # find the biggest value in min heap and send it to max heap
         to_max_value = -heapq.heappop(self.min_heap)
         heapq.heappush(self.max_heap, to_max_value)
         
         if len(self.max_heap) > len(self.min_heap):
+            # find the smallest value in max heap and send it to min heap
             to_min_value = -heapq.heappop(self.max_heap)
             heapq.heappush(self.min_heap, to_min_value)
         
