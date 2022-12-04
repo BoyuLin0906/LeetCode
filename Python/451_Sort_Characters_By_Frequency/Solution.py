@@ -2,6 +2,10 @@ from collections import Counter
 
 class Solution:
     def frequencySort(self, s: str) -> str:
+    	"""
+		Runtime 56 ms / Beats 85.34%
+		Memory 15.3 MB / Beats 49.59%
+    	"""
         counter = Counter(s)
         s_len = len(counter)
 
