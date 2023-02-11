@@ -4,6 +4,8 @@ class Solution:
         Runtime 95 ms / Beats 49.71%
         Memory 14.2 MB / Beats 31.23%
         """
+        # BFS + Graph
+
         red_edge_dict = collections.defaultdict(list)
         red_edge_visited = dict()
         blue_edge_dict = collections.defaultdict(list)
@@ -26,7 +28,7 @@ class Solution:
         for next_node in blue_edge_dict[0]:
             queue.append(("blue", next_node, 1))
 
-        # run the alternating color edges
+        # run the alternating color edges (BFS)
         res = [inf] * n
         while queue:
             color, node, length = queue.pop(0)
